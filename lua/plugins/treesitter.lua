@@ -17,6 +17,7 @@ return {
         "typescript",
         "vim",
         "yaml",
+        "ruby",
       },
       highlight = { enable = true },
       indent = { enable = true },  
