@@ -12,7 +12,6 @@ return {
         "lua",
         "markdown",
         "python",
-        "query",
         "tsx",
         "typescript",
         "vim",
