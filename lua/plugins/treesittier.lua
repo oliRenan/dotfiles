@@ -2,6 +2,9 @@ return {
     {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
+    dependencies = {
+        "windwp/nvim-ts-autotag",
+    },
     config = function()
         require("nvim-treesitter.configs").setup({
             -- A list of parser names, or "all"
@@ -19,6 +22,19 @@ return {
 
             indent = {
                 enable = true
+            },
+
+            autotag = {
+                enable = true,
+            },
+            incremental_selection = {
+                enable = true,
+                keymaps = {
+                    init_selection = "<C-space>",
+                    node_incremental = "<C-space>",
+                    scope_incremental = false,
+                    node_decremental = "<bs>",
+                },
             },
 
             highlight = {
